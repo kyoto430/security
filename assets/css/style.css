@@ -9,7 +9,7 @@
   --color-dark-xl: #8e8e8e;
   --color-dark-2xl: #323133;
   --color-dark-3xl: #000000;
-  --color-primary: #F6CF91;
+  --color-primary: #f6cf91;
 }
 
 /* base */
@@ -22,7 +22,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 li {
@@ -35,11 +35,241 @@ a {
 }
 
 body {
-  background: linear-gradient(90deg, #323133 0%, #1B191E 100%);
+  background: linear-gradient(90deg, #323133 0%, #1b191e 100%);
   color: var(--color-light-xl);
   font-family: 'Inter', sans-serif;
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+/* wrapper */
+
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+/* professional */
+
+.professional {
+  padding-top: 65px;
+  padding-bottom: 90px;
+}
+
+.professional__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.professional__title,
+.professional__subtitle {
+  color: var(--color-light-xl);
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.professional__container {
+  position: relative;
+  margin-top: 58px;
+  min-height: 800px;
+  background-image: url('../images/backgrounds/01.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.professional__badge {
+  position: absolute;
+  top: 8%;
+  right: 53%;
+  display: inline-block;
+  padding: 13px 35px;
+  border: 1px solid var(--color-light-xl);
+  border-radius: 10px;
+  background-color: transparent;
+  color: var(--color-light-xl);
+  font-size: 10px;
+}
+
+.professional__item-1 {
+  position: absolute;
+  top: 1%;
+  right: 34%;
+  color: var(--color-light-xl);
+  font-size: 13px;
+}
+
+.professional__item-2 {
+  position: absolute;
+  top: 37%;
+  left: 5%;
+  color: var(--color-light-xl);
+  font-size: 13px;
+}
+
+.professional__item-3 {
+  position: absolute;
+  top: 73%;
+  left: 15%;
+  color: var(--color-light-xl);
+  font-size: 13px;
+}
+
+.professional__container-advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.advantages__title {
+  color: var(--color-light-xl);
+  font-size: 24px;
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 50px;
+  column-gap: 20px;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.advantages__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.advantages__item-title {
+  color: var(--color-light-xl);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.advantages__item-text {
+  color: var(--color-light-xl);
+  font-size: 16px;
+}
+
+/* complex */
+
+.complex {
+}
+
+.complex__inner {
+
+}
+.complex__title {
+  color: var(--color-light-xl);
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.complex__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+.complex__badge {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  padding: 47px 67px;
+  border-radius: 20px;
+  gap: 14px;
+  background: linear-gradient(
+    90deg,
+    rgba(112, 117, 125, 0.97) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+}
+
+.complex__badge-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.complex__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.complex__badge-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.complex__badge-text {
+  color: var(--color-light-xl);
+  font-size: 11px;
+}
+.complex__container {
+  position: relative;
+  min-height: 830px;
+  background-image: url('../images/backgrounds/02.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+}
+.complex__list {
+  height: 415px;
+  position: absolute;
+  top: 23%;
+  right: 2%;
+}
+.complex__list-title {
+  color: var(--color-light-xl);
+  font-size: 13.5px;
+  font-weight: 700;
+}
+.complex__item-1 {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.complex__item-2 {
+  position: absolute;
+  bottom: 35%;
+  left: 15%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.complex__item-3 {
+  position: absolute;
+  bottom: 4%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.complex__item-number {
+  color: var(--color-primary);
+  font-size: 12px;
+}
+.complex__item-title {
+  color: var(--color-light-xl);
+  font-size: 13px;
+}
+.complex__item-text {
+  color: var(--color-light-xl);
+  font-size: 10px;
 }
