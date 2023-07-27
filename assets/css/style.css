@@ -59,6 +59,7 @@ img {
 }
 
 .container-xl {
+  position: relative;
   max-width: 1440px;
   padding: 0 10px;
   margin: 0 auto;
@@ -299,9 +300,14 @@ img {
 }
 
 .counter__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 550px;
   background-image: url('../images/imgs/02.png');
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: center right;
   background-size: contain;
 }
 
@@ -781,9 +787,14 @@ img {
 }
 
 .contur__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 550px;
   background-image: url('../images/imgs/15.png');
   background-repeat: no-repeat;
-  background-position: 110%;
+  background-position: center right;
   background-size: contain;
 }
 
@@ -1212,9 +1223,14 @@ img {
 }
 
 .curator__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 550px;
   background-image: url('../images/imgs/25.png');
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: center right;
   background-size: contain;
 }
 
@@ -1985,7 +2001,7 @@ img {
     max-width: 150px;
   }
 
-  .counter__inner {
+  .counter__inner, .contur__inner, .curator__inner {
     background: none;
   }
 
